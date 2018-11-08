@@ -14,6 +14,9 @@
 		7926882D21912E80007D6B2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7926882B21912E80007D6B2F /* LaunchScreen.storyboard */; };
 		792688352191318C007D6B2F /* AlamofireComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792688342191318C007D6B2F /* AlamofireComponent.swift */; };
 		795EDB902192C83200DE6D83 /* GCDLearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795EDB8F2192C83200DE6D83 /* GCDLearnViewController.swift */; };
+		795EDB932193D82B00DE6D83 /* YepDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795EDB922193D82B00DE6D83 /* YepDownloader.swift */; };
+		795EDB952193E14100DE6D83 /* SendingMessagePool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795EDB942193E14100DE6D83 /* SendingMessagePool.swift */; };
+		795EDB972194030D00DE6D83 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795EDB962194030D00DE6D83 /* SearchItem.swift */; };
 		AEEBD2BC71B63EC0134CB1A3 /* Pods_DemoAlamofireLearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5875285966DBF91C8B006394 /* Pods_DemoAlamofireLearn.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +33,9 @@
 		7926882E21912E80007D6B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		792688342191318C007D6B2F /* AlamofireComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireComponent.swift; sourceTree = "<group>"; };
 		795EDB8F2192C83200DE6D83 /* GCDLearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDLearnViewController.swift; sourceTree = "<group>"; };
+		795EDB922193D82B00DE6D83 /* YepDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YepDownloader.swift; sourceTree = "<group>"; };
+		795EDB942193E14100DE6D83 /* SendingMessagePool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingMessagePool.swift; sourceTree = "<group>"; };
+		795EDB962194030D00DE6D83 /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,12 +84,23 @@
 				7926882421912E7E007D6B2F /* ViewController.swift */,
 				795EDB8F2192C83200DE6D83 /* GCDLearnViewController.swift */,
 				792688342191318C007D6B2F /* AlamofireComponent.swift */,
+				795EDB912193D69700DE6D83 /* Yep */,
 				7926882621912E7E007D6B2F /* Main.storyboard */,
 				7926882921912E80007D6B2F /* Assets.xcassets */,
 				7926882B21912E80007D6B2F /* LaunchScreen.storyboard */,
 				7926882E21912E80007D6B2F /* Info.plist */,
 			);
 			path = DemoAlamofireLearn;
+			sourceTree = "<group>";
+		};
+		795EDB912193D69700DE6D83 /* Yep */ = {
+			isa = PBXGroup;
+			children = (
+				795EDB922193D82B00DE6D83 /* YepDownloader.swift */,
+				795EDB942193E14100DE6D83 /* SendingMessagePool.swift */,
+				795EDB962194030D00DE6D83 /* SearchItem.swift */,
+			);
+			path = Yep;
 			sourceTree = "<group>";
 		};
 		C9BC0E443A1CA7E73233B52E /* Frameworks */ = {
@@ -215,8 +232,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7926882521912E7E007D6B2F /* ViewController.swift in Sources */,
+				795EDB932193D82B00DE6D83 /* YepDownloader.swift in Sources */,
 				792688352191318C007D6B2F /* AlamofireComponent.swift in Sources */,
 				795EDB902192C83200DE6D83 /* GCDLearnViewController.swift in Sources */,
+				795EDB952193E14100DE6D83 /* SendingMessagePool.swift in Sources */,
+				795EDB972194030D00DE6D83 /* SearchItem.swift in Sources */,
 				7926882321912E7E007D6B2F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

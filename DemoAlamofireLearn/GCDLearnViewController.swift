@@ -28,6 +28,7 @@ class GCDLearnViewController: UIViewController {
 //        notify()：用来汇总结果，所有任务结束汇总，不阻塞当前线程
 //        wait()：等待直到所有任务执行结束，中途不能取消，阻塞当前线程
         example("多个任务全部结束后做一个全部结束的处理") {
+            RunLoop.Mode.common
             let queue = DispatchQueue.global(qos: .default)
             let group = DispatchGroup()
             queue.async {
@@ -70,6 +71,21 @@ class GCDLearnViewController: UIViewController {
         example("Semaphore") {
             let semaphore = DispatchSemaphore(value: 1)
             semaphore.signal()
+            print("Semaphore11")
+        }
+//        https://www.jianshu.com/p/2d57c72016c6
+        example("3.1 队列的创建方法/获取方法") {
+            let cQueue = DispatchQueue(label: "queue.learn", qos: DispatchQoS.default, attributes: DispatchQueue.Attributes.concurrent)
+//            let sQueue = DispatchQueue(label: "queue.s.learn", qos: .default, attributes: DispatchQueue.Attributes.)
+            let mainQueue = DispatchQueue.main
+            let gQueue = DispatchQueue.global(qos: .default)
+            
+            cQueue.sync {
+                for index in 0...3 {
+                    sleep(1)
+                    print(Thread.current.description + "index:\(index)")
+                }
+            }
         }
     }
     
