@@ -65,6 +65,11 @@ class ViewController: UIViewController {
 //        DispatchQueue.main.asyncAfter(deadline: .now() + DispatchTimeInterval.seconds(1)) {
 //            RequestComponent.request()
 //        }
+
+        let p = Phone.phone(.iPhone)
+        p.name = "iPhone"
+        p.size = CGSize(width: 375, height: 667)
+        p.send("Hello world")
     }
 
     @IBAction func testAction(_ sender: UIButton) {
