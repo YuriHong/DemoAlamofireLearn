@@ -24,6 +24,8 @@
 		795EDBA221951D3700DE6D83 /* LawOfDemeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795EDBA121951D3700DE6D83 /* LawOfDemeter.swift */; };
 		795EDBA421951F8000DE6D83 /* LiskovSubstitutionPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795EDBA321951F8000DE6D83 /* LiskovSubstitutionPrinciple.swift */; };
 		795EDBA82195226E00DE6D83 /* SimpleFactoryPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795EDBA72195226E00DE6D83 /* SimpleFactoryPattern.swift */; };
+		795EDBD92195752E00DE6D83 /* SwiftRuntimeLearn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795EDBD82195752E00DE6D83 /* SwiftRuntimeLearn.swift */; };
+		795EDBDE2199556C00DE6D83 /* FileManagerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795EDBDD2199556C00DE6D83 /* FileManagerComponent.swift */; };
 		AEEBD2BC71B63EC0134CB1A3 /* Pods_DemoAlamofireLearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5875285966DBF91C8B006394 /* Pods_DemoAlamofireLearn.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		795EDBA121951D3700DE6D83 /* LawOfDemeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawOfDemeter.swift; sourceTree = "<group>"; };
 		795EDBA321951F8000DE6D83 /* LiskovSubstitutionPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskovSubstitutionPrinciple.swift; sourceTree = "<group>"; };
 		795EDBA72195226E00DE6D83 /* SimpleFactoryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleFactoryPattern.swift; sourceTree = "<group>"; };
+		795EDBD82195752E00DE6D83 /* SwiftRuntimeLearn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRuntimeLearn.swift; sourceTree = "<group>"; };
+		795EDBDD2199556C00DE6D83 /* FileManagerComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				7926882421912E7E007D6B2F /* ViewController.swift */,
 				795EDB8F2192C83200DE6D83 /* GCDLearnViewController.swift */,
 				792688342191318C007D6B2F /* AlamofireComponent.swift */,
+				795EDBDC2199540F00DE6D83 /* FileManager */,
+				795EDBD72195750E00DE6D83 /* SwiftRuntime */,
 				795EDB98219430B600DE6D83 /* ObjectOrientedDesign */,
 				795EDB912193D69700DE6D83 /* Yep */,
 				7926882621912E7E007D6B2F /* Main.storyboard */,
@@ -146,6 +152,22 @@
 				795EDBA72195226E00DE6D83 /* SimpleFactoryPattern.swift */,
 			);
 			path = "设计模式";
+			sourceTree = "<group>";
+		};
+		795EDBD72195750E00DE6D83 /* SwiftRuntime */ = {
+			isa = PBXGroup;
+			children = (
+				795EDBD82195752E00DE6D83 /* SwiftRuntimeLearn.swift */,
+			);
+			path = SwiftRuntime;
+			sourceTree = "<group>";
+		};
+		795EDBDC2199540F00DE6D83 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				795EDBDD2199556C00DE6D83 /* FileManagerComponent.swift */,
+			);
+			path = FileManager;
 			sourceTree = "<group>";
 		};
 		C9BC0E443A1CA7E73233B52E /* Frameworks */ = {
@@ -279,8 +301,10 @@
 				795EDBA221951D3700DE6D83 /* LawOfDemeter.swift in Sources */,
 				7926882521912E7E007D6B2F /* ViewController.swift in Sources */,
 				795EDB9A2194318E00DE6D83 /* OpenClosePrinciple.swift in Sources */,
+				795EDBDE2199556C00DE6D83 /* FileManagerComponent.swift in Sources */,
 				795EDBA421951F8000DE6D83 /* LiskovSubstitutionPrinciple.swift in Sources */,
 				795EDB9E2194364E00DE6D83 /* DependencyInnversionPrinciple.swift in Sources */,
+				795EDBD92195752E00DE6D83 /* SwiftRuntimeLearn.swift in Sources */,
 				795EDB932193D82B00DE6D83 /* YepDownloader.swift in Sources */,
 				792688352191318C007D6B2F /* AlamofireComponent.swift in Sources */,
 				795EDB902192C83200DE6D83 /* GCDLearnViewController.swift in Sources */,

@@ -14,6 +14,12 @@ class ViewController: UIViewController {
     let load = UIImageView(frame: CGRect(x: 100, y: 100, width: 130, height: 97))
     var loadCom: Component.BGContainerComponent!
     var touchHiden: Component.TouchHidenComponent!
+    
+    let testStringOne = "testStringOne"
+    let testStringTwo = "testStringTwo"
+    let testStringThr = "testStringThr"
+    var count: UInt32 = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -66,28 +72,42 @@ class ViewController: UIViewController {
 //            RequestComponent.request()
 //        }
 
-        let p = Phone.phone(.iPhone)
-        p.name = "iPhone"
-        p.size = CGSize(width: 375, height: 667)
-        p.send("Hello world")
+        example("Phone") {
+            let p = Phone.phone(.iPhone)
+            p.name = "iPhone"
+            p.size = CGSize(width: 375, height: 667)
+            p.send("Hello world")
+        }
     }
 
     @IBAction func testAction(_ sender: UIButton) {
-        RequestComponent.request()
+//        RequestComponent.request()
 //        load.image = UIImage(named: "load")
         
 //        loadCom.push()
 //        touchHiden.push()
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + DispatchTimeInterval.seconds(1)) {
-//            loadCom.popLoad()
+//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + DispatchTimeInterval.seconds(1)) {
+////            loadCom.popLoad()
+//        }
+        
+        example("Swift runtime") {
+            let swiftClass = TestASwiftClass()
+//            let proList = class_copyPropertyList(object_getClass(swiftClass), &count)
+            let proList = class_copyPropertyList(object_getClass(self), &count)
+            for i in 0..<numericCast(count) {
+                let property = property_getName(proList![i]);
+                print("属性成员属性:%@",String.init(utf8String: property) ?? "没有找到你要的属性");
+            }
         }
+        
     }
     
 }
 
 func example(_ des: String, excute: () -> ()) {
-    print("---->\(des)<----")
+    print("---->\(des) Begin<----")
     excute()
+    print("---->\(des) End<----")
 }
 
 extension UIView {
